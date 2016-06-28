@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人简历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<base href='file:\\\D:\test\nisang.github.io\'/>
+</head>
+<body>
+<h1><center><strong>个人简历</strong></h1>
+<p><img align="right" style="width:200px;height:200px;padding-top:63px;" src="http://7xt7v2.com1.z0.glb.clouddn.com/head.jpg"></p>
+<h2>一：个人信息</h2>
+<p><style>
+table {
+    table-layout: fixed;
+    border: 1px bold #ccc;
+}
+table tr td.last {
+    border: none;
+}
+table tr td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+</style></p>
+<table width="550" border="0" cellspacing="0">
+  <tr>
+    <td>姓名</td>
+    <td>石有平</td>
+  </tr>
+  <tr>
+    <td>生日</td>
+    <td>1992-01-20</td>
+  </tr>
+  <tr>
+    <td>大学</td>
+    <td>九江学院</td>
+  </tr>
+  <tr>
+    <td >毕业</td>
+    <td >2013-06</td>
+  </tr>
+  <tr>
+    <td >手机号码</td>
+    <td >17092559737</td>
+  </tr>
+  <tr>
+    <td >邮箱</td>
+    <td >q826739324@126.com</td>
+  </tr>
+
+</table>
+<h2>二：自我介绍</h2>
+<blockquote>
+<p>工作中专于需求的逻辑，整理出业务，并便编写出可高效并服务于产品的代码，以此为乐，并乐此不疲。</p>
+<blockquote>
+<p>生活中，善思考发现。在软件技术领域，关注最前沿的科技，并坚持去实践，常浏览开源中国咨询，常用github，以此用与生活与工作。</p>
+<p>对于新技术的学习，docker技术是通过自己学习，并利用在工作；spark是个人想要以此用在生活与工作的实例，并在大数据方面有所建树。</p>
+<p>兴趣爱好方面：个人喜欢看电影，听歌，爱捣腾技术；爱骑行，喜欢玩乒乓球。</p>
+</blockquote>
+</blockquote>
+<h2>三：公司工作</h2>
+<ul>
+<li>
+<p><a href="https://www.baidu.com/s?wd=%20%E6%B1%9F%E8%8B%8F%E5%85%AC%E4%BF%A1%E8%BD%AF%E4%BB%B6%E7%A7%91%E6%8A%80%E5%8F%91%E5%B1%95%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" title="江苏公信软件科技发展有限公司">江苏公信软件科技发展有限公司</a></p>
+<blockquote>
+<p>工作时间：2013-12到2014-06
+职位：初级java开发</p>
+<blockquote>
+<p>工作内容:使用java语言开发公安系统业务，水电煤系统等业务，并在现有的平台上编写业务。主要参与对公安系统的某些业务的升级，在现有的业务基础上准对某些地区的水电煤支付业务的编写。</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p><strong><a href="http://www.jsddgx.com/" title="江苏省高信科技发展有限公司">江苏省高信科技发展有限公司</a></strong></p>
+<blockquote>
+<p>工作时间：2014-06到2015-10</p>
+<blockquote>
+<p>职位：java开发工程师</p>
+<p>工作内容：使用java语言开发多个java ee 企业级项目，并承担前端html/css+js的工作内容，在公司内主导开发过一个主要项目：会议云，并在期间参与开发多个如婚礼云，南昌物价局管理系统等项目，同时承担会议云项目的运维。</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p><strong><a href="http://www.haoxuantech.cn" title="好宣（上海）科技有限公司">好宣（上海）科技有限公司</a></strong></p>
+<blockquote>
+<p>工作时间：2015-10至2015-06</p>
+<blockquote>
+<p>职位：公司技术合伙人，同时担任公司技术负责人等多种角色。</p>
+<p>工作内容：在该公司内，主要承担技术支撑并架构后台框架，需求分析，需求详细设计及分析，需求可行性论证，软件测试，公司运维支持。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2>四：项目经验</h2>
+<ul>
+<li>
+<p><strong>0.公安系统的业务及在现有模式下编写特定地区的水电煤计费系统。</strong></p>
+<blockquote>
+<p>工具使用：开发工具：Eclipse ee ，应用服务器：Tomcat</p>
+</blockquote>
+</li>
+<li>
+<p><strong>1.会议云(2014-06到2014-11第一阶段 2015-01到-2015-09)</strong></p>
+<blockquote>
+<p>会议云以参会人员的手机、PC等云端设备为载体，通过主动信息推送或建立电话会议进行多方通话的方式，使得与会者及时了解会议相关信息，提供无处不在的会议信息化体验。</p>
+<p>会议云后台项目构架由基本的三大框架搭建（Struts2+Spring+Hibernate），采用JSP开发的MVC架构，前端框架使用Bootstrap（仅仅使用某些效果），并以jquery库为基础，在view层编写相应的业务，其中大量的编写js操作dom结构并以此完成业务。
+微信项目由SpringMVC+Mybatis搭建，前端以zepto库为基础，在毫无前端框架的基础上，编写前端页面。</p>
+<p>项目所得与所失：</p>
+<blockquote>
+<p>在这个项目中，完整的参与了一个产品从最初到最后上线交付，乃至到最后的升级迭代，重构软件系统。在不断的重新迭代升级中，不断推翻之前的业务并重新编写，重复的业务分析与编写代码，导致后期的整个项目业务上混乱且难以管理，且上线错误率越来越高。</p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p><strong>2.婚礼云微信(2014-10到2014-11)</strong></p>
+<blockquote>
+<p>婚礼云提供给用户浏览，同时在线编辑婚礼请帖并分发给微信好友。使用SpringMVC+Mybatis项目搭建，前端以zepto库为基础，在毫无前端框架的基础上，编写前端页面。个人所承担的业务为某些业务页面的前端与后台。</p>
+</blockquote>
+</li>
+<li>
+<p><strong>3.A同学(2015-09到2016-06)</strong></p>
+<blockquote>
+<p>项目介绍：</p>
+<blockquote>
+<p>A同学是一款定位在大学并服务于大学生的生活社交类软件，其主要功能包含学姐帮帮，拜师学艺，爆美图等模块功能。
+1.为开发人员准备开发环境,以coreos为系统环境,使用docker应用容器引擎，构建禅道管理软件镜像，dokuwiki，并编写其他如mysql，redis，mongodb，gitlab等Dockerfile，并构建自己的镜像。
+2.整理需求，编写需求文档
+3.开发期间，讨论需求，确定需求，并制定开发计划。
+4.功能模块测试，每三天客户端与后台出一个小版本，每六天确定大版本，并上传测试服务器上测试试用。</p>
+</blockquote>
+<p>项目技术：</p>
+<blockquote>
+<p>后台使用基本的三大框架（Struts2+Spring+Hibernate）与dubbo分布式服务框架，图片资源使用七牛，聊天功能使用环信提高，代码仓库使用svn与gitlab。对于支付功能则使用独立的系统，使用基本的servlet，并以Restful Api的形式提供给终端使用。微信使用Spring MVC与Mybatis+dubbo构架，并为微信提供服务。前端项目以前后端分离的方式进行，资源以CDN的形式放在独立的二级域名系统里。</p>
+</blockquote>
+<p>对于大数据方面：</p>
+<blockquote>
+<p>使用Spark对系统的四值一数的排名的重构，未按计划实行并未真正的使用上,作为技术的缺憾，是个败笔。</p>
+</blockquote>
+<p>服务器方面：
+系统服务器套件使用coreos，镜像使用tomcat，redis，mongodb，内部转发使用nginx，外部转发使用阿里云负载均衡。</p>
+<p>测试方面</p>
+<blockquote>
+<p>使用禅道管理软件作为软件管理工具，使用Rap作为接口编写软件，使用Apache Jmeter作为压力测试工具,使用jenkins自动化工具代码自动化打包发布。</p>
+</blockquote>
+<p>项目所得与所失</p>
+<blockquote>
+<p>在未进行大量的数据论证之后，盲目的一厢情愿的叠加功能，并提出大量指导产品发展方向的虚词，并阻挡整个产品乃至整个产品的神态系统的推进。同时局限于自身的管理能力，无法很好的让整个系统活动起来，太多的问题。</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2>五：知识结构</h2>
+<ul>
+<li>java EE</li>
+</ul>
+<blockquote>
+<p>servlet jsp c标签
+框架：Struts2 Spring Hibernate Mybatis SpringMVC 
+分布式服务框架：dubbo的使用
+数据库：mysql oracle redis(用作缓存使用，如登录session缓存,用户基本数据缓存) mongodb
+应用服务器：tomcat jetty</p>
+</blockquote>
+<ul>
+<li>前端</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>html/css html5 css3 js jquery zepto amaze-ui</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>运维</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>阿里云（负载均衡，RDS，云主机Coreos，Redis） 
+nginx,tomcat Coreos docker linux sh脚本 centos ubuntu</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>职业目标</li>
+</ul>
+<blockquote>
+<p>在后台领域里的搜索引擎，大数据方面有所成就。</p>
+</blockquote>
+<h2>六：多余的话</h2>
+<blockquote>
+<p>对于从事软件行业这些年，所积累的基本逻辑与思路</p>
+<blockquote>
+<p>对于问题：</p>
+<blockquote>
+<p>当发现问题,一则详细描述问题，二当定位问题，三需快速解决问题，后而测试重现与否。</p>
+</blockquote>
+<p>对于逻辑与流程问题：</p>
+<blockquote>
+<p>1.大流程，小逻辑。优先以大流程走业务，详细后当以小逻辑走业务。</p>
+</blockquote>
+<p>对于二手车市场的考虑：</p>
+<blockquote>
+<p>价格建议非常重要，如果能给予用户的二手车价格建议，并因之提高二手车交易量，如同Airbnb预测房屋价格并推荐给用户并因之提高交易量，提高营收。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2>七：备注</h2>
+<ul>
+<li>github主页：<a href="https://github.com/nisang" title="https://github.com/nisang">https://github.com/nisang</a></li>
+<li>简历地址：<a href="https://nisang.github.io/" title="个人简历">https://nisang.github.io/</a></li>
+</ul>
+<p><em><p style="text-align:right">edit by MarkdownPad 2</p></em></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
